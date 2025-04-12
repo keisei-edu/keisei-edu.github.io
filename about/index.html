@@ -22,11 +22,15 @@
       justify-content: flex-end;
       padding: 0 20px;
       box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
     }
 
     .menu {
       color: white;
-      font-size: 14px;
+      font-size: 12px;
     }
 
     .menu a {
@@ -40,19 +44,26 @@
       background-color: #1c3d6e;
       color: white;
       text-align: center;
-      padding: 30px 10px 20px;
+      padding: 60px 10px 10px;
+      margin-top: 25px;
     }
 
     .header-text .small {
-      font-size: 14px;
+      font-size: 12px;
     }
 
     .header-text .medium {
-      font-size: 18px;
+      font-size: 14px;
     }
 
     .header-text .large {
-      font-size: 22px;
+      font-size: 16px;
+    }
+
+    /* 仮のコンテンツ */
+    .content {
+      padding: 30px 20px;
+      line-height: 1.6;
     }
 
     /* 下部バー */
@@ -60,6 +71,16 @@
       background-color: #1c3d6e;
       height: 50px;
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 11px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      position: fixed;
+      bottom: 0;
+      left: 0;
     }
   </style>
 </head>
@@ -77,6 +98,13 @@
     <div class="medium">Keisei a K-12 school・Keisei Juvenile Training School</div>
   </div>
 
-  <div class="bottom-bar"></div>
+  <div class="content">
+    <p>これは仮のコンテンツです。ここに学校紹介やニュース、イベント情報などを配置していく予定です。敬誠学園は、幼稚園から高等学校、さらには第一種・第二種少年院までを包含した一貫教育機関です。多様な学びの機会を提供し、社会に貢献できる人材を育成します。</p>
+    <p>ここにはさらに、施設紹介や教育理念、教師紹介、在校生・卒業生の声などが加わる予定です。今後のアップデートをお楽しみに！</p>
+  </div>
+
+  <div class="bottom-bar">
+    &copy; 学校法人 敬誠学園 Keisei Educational Institute
+  </div>
 </body>
 </html>
