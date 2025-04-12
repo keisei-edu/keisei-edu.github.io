@@ -39,6 +39,29 @@
       margin-left: 20px;
     }
 
+    /* ヘッダー画像エリア */
+    .header-image {
+      position: relative;
+      width: 100%;
+      margin-top: 25px;
+    }
+
+    .header-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .header-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 32px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      white-space: nowrap;
+    }
+
     /* 仮のコンテンツ */
     .content {
       padding: 60px 20px 110px;
@@ -85,7 +108,10 @@
     </div>
   </div>
 
-  <img src="/file/header/about.jpg" alt="敬誠学園ヘッダー画像" style="width: 100%; display: block; margin-top: 25px;">
+  <div class="header-image">
+    <img src="/file/header/about.jpg" alt="敬誠学園ヘッダー画像">
+    <div class="header-text">敬誠学園について</div>
+  </div>
 
   <div class="content">
     <p>これは仮のコンテンツです。ここに学校紹介やニュース、イベント情報などを配置していく予定です。敬誠学園は、幼稚園から高等学校、さらには第一種・第二種少年院までを包含した一貫教育機関です。多様な学びの機会を提供し、社会に貢献できる人材を育成します。</p>
