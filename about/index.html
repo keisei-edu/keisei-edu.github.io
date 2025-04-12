@@ -94,6 +94,51 @@
       margin: 0;
     }
 
+    /* サブタイトル */
+    .subtitle {
+      font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", sans-serif;
+      font-weight: bold;
+      color: white;
+      background-color: #1c3d6e;
+      text-align: center;
+      padding: 10px;
+      margin: 40px auto 20px;
+      width: fit-content;
+      border-radius: 4px;
+      font-size: 18px;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .learning-box {
+      background-color: #add8e6;
+      flex: 1;
+      min-width: 200px;
+      padding: 15px;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+
+    .box-title {
+      color: #00bfff;
+      font-weight: bold;
+      font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .box-content {
+      color: black;
+      font-size: 13px;
+      font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", sans-serif;
+      word-wrap: break-word;
+    }
+
     /* 下部バー */
     .bottom-bar {
       background-color: #1c3d6e;
@@ -146,6 +191,22 @@
   <div class="content">
     <h2>教育目標・特色</h2>
     <p>本校は、国内でも珍しい、幼少中高一貫校であることに加え、全寮制でもあります。さらに、第一種・第二種少年院を併設しています。少年院を併設した学校は、本校が日本初です。本校には、あなたを変える、そして、素晴らしい人間に育て上げる自信があります。</p>
+
+    <div class="subtitle">敬誠学園３つの学び</div>
+    <div class="box-container">
+      <div class="learning-box">
+        <div class="box-title">1、確かな学力伸長</div>
+        <div class="box-content">コンテンツを追加</div>
+      </div>
+      <div class="learning-box">
+        <div class="box-title">2、自立精神を養う</div>
+        <div class="box-content">コンテンツを追加</div>
+      </div>
+      <div class="learning-box">
+        <div class="box-title">3、ハングリー精神</div>
+        <div class="box-content">コンテンツを追加</div>
+      </div>
+    </div>
   </div>
 
   <div class="bottom-bar">
