@@ -5,60 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>敬誠学園</title>
   <link rel="icon" href="https://keisei-edu.github.io/favicon.heif" type="image/heif">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="敬誠学園">
-  <link rel="apple-touch-icon" href="https://keisei-edu.github.io/favicon.heif">
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      position: relative;
-      font-family: "Hiragino Mincho ProN", serif;
+      font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", serif;
+      color: #000;
     }
+
+    /* 上部バー */
     .top-bar {
       background-color: #1c3d6e;
-      height: 120px;
+      height: 25px;
       width: 100%;
-      color: white;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      position: relative;
-      text-align: center;
-      padding: 10px;
+      justify-content: flex-end;
+      padding: 0 20px;
       box-sizing: border-box;
     }
-    .top-bar .menu {
-      position: absolute;
-      right: 20px;
-      top: 8px;
+
+    .menu {
+      color: white;
       font-size: 14px;
     }
-    .top-bar .menu a {
+
+    .menu a {
       color: white;
       text-decoration: none;
-      margin-left: 15px;
+      margin-left: 20px;
     }
-    .top-bar .title-small {
+
+    /* ヘッダーテキスト */
+    .header-text {
+      background-color: #1c3d6e;
+      color: white;
+      text-align: center;
+      padding: 30px 10px 20px;
+    }
+
+    .header-text .small {
       font-size: 14px;
     }
-    .top-bar .title-main {
+
+    .header-text .medium {
       font-size: 18px;
-      margin-top: 4px;
-      margin-bottom: 4px;
     }
-    .top-bar .title-en {
-      font-size: 14px;
+
+    .header-text .large {
+      font-size: 22px;
     }
+
+    /* 下部バー */
     .bottom-bar {
       background-color: #1c3d6e;
       height: 50px;
       width: 100%;
-      position: fixed;
-      bottom: 0;
-      left: 0;
     }
   </style>
 </head>
@@ -68,14 +69,13 @@
       <a href="#access">▶︎アクセス</a>
       <a href="#contact">▶︎お問い合わせ</a>
     </div>
-    <div class="title-wrapper">
-      <div class="title-small">学校法人 敬誠学園</div>
-      <div class="title-main">敬誠幼稚園・小学校・中学校・高等学校・第一種少年院・第二種少年院</div>
-      <div class="title-en">Keisei a K-12 school・Keisei Juvenile Training School</div>
-    </div>
   </div>
 
-  <!-- ここにコンテンツを追加 -->
+  <div class="header-text">
+    <div class="small">学校法人 敬誠学園</div>
+    <div class="large">敬誠幼稚園・小学校・中学校・高等学校・第一種少年院・第二種少年院</div>
+    <div class="medium">Keisei a K-12 school・Keisei Juvenile Training School</div>
+  </div>
 
   <div class="bottom-bar"></div>
 </body>
